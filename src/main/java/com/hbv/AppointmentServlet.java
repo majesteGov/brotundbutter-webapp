@@ -23,7 +23,6 @@ public class AppointmentServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
         HttpSession session = request.getSession(false);
 
         if (session == null) {

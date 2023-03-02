@@ -10,31 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66263c4c-7f14-4cb8-886e-f8ae4df2d915" name="Changes" comment="&quot;completion of the missing classes&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/AppointmentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/ConfirmationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MonitorStateLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyContextListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/QrCodeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/my.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/EmailSenderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignInServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/AppointmentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/AppointmentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/ConfirmationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/ConfirmationServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/confirmation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/confirmation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/confirmation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signUp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signUp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/reservation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appointment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appointment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,39 +49,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2ML2UQTdmpVaXy4ESu3O9DBB1vw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/silat/IdeaProjects/swe3/brotundbutter-java-webapp/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\silat\IdeaProjects\swe3\brotundbutter-java-webapp\src\main\resources" />
@@ -215,6 +176,7 @@
       <workItem from="1677532567487" duration="7026000" />
       <workItem from="1677601309617" duration="666000" />
       <workItem from="1677709016573" duration="8571000" />
+      <workItem from="1677764290208" duration="14491000" />
     </task>
     <servers />
   </component>
