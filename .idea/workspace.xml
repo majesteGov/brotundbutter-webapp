@@ -9,38 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66263c4c-7f14-4cb8-886e-f8ae4df2d915" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyConnectionWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignInServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/confirmation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/confirmation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/registration.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/reservation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/reservation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/hbv/SignInServletTest.java" afterDir="false" />
+    <list default="true" id="66263c4c-7f14-4cb8-886e-f8ae4df2d915" name="Changes" comment="&quot;completion of the missing classes&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/AppointmentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/ConfirmationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MonitorStateLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/QrCodeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SQL.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/my.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignInServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/confirmation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/confirmation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/confirmation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reservation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appointment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +44,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -97,12 +96,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\silat\IdeaProjects\swe3\brotundbutter-java-webapp\src\main\resources" />
+      <recent name="C:\Users\silat\IdeaProjects\swe3\brotundbutter-java-webapp\src\main\java\com\hbv" />
+      <recent name="C:\Users\silat\IdeaProjects\swe3\brotundbutter-java-webapp\src\main\java\com\service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -131,6 +133,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61703" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -163,10 +213,27 @@
       <option name="presentableId" value="Default" />
       <updated>1677532565721</updated>
       <workItem from="1677532567487" duration="7026000" />
+      <workItem from="1677601309617" duration="666000" />
+      <workItem from="1677709016573" duration="8571000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;completion of the missing classes&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;completion of the missing classes&quot;" />
   </component>
 </project>

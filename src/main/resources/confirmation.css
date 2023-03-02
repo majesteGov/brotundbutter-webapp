@@ -51,17 +51,35 @@ link[rel="icon"] {
   height: 32px;
 }
 
-/* styles for the logout form */
-input[type=submit] {
-	position: absolute;
+input[type="submit"] {
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-form {
+  position: absolute;
   top: 10px;
   right: 10px;
-	background-color: #008CBA;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	text-decoration: none;
-	font-size: 16px;
-	border-radius: 5px;
-	cursor: pointer;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qrcode {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }

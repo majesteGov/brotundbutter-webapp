@@ -2,5 +2,88 @@
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
-         version="5.0">
+         version="5.0">1
+    <context-param>
+        <param-name>myinit</param-name>
+        <param-value>myinitvalue</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>com.hbv.MyContextListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.hbv.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/helloServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>com.hbv.SignInServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/signIn</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.hbv.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/signUp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AppointmentServlet</servlet-name>
+        <servlet-class>com.hbv.AppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppointmentServlet</servlet-name>
+        <url-pattern>/appointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConfirmationServlet</servlet-name>
+        <servlet-class>com.hbv.ConfirmationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfirmationServlet</servlet-name>
+        <url-pattern>/confirmation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QrCodeServlet</servlet-name>
+        <servlet-class>com.hbv.QrCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QrCodeServlet</servlet-name>
+        <url-pattern>/qrcode</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.hbv.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+
+    <filter>
+        <filter-name>myfilter</filter-name>
+        <filter-class>com.hbv.MyFilter</filter-class>
+        <async-supported>true</async-supported>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>myfilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
