@@ -1,8 +1,6 @@
 package com.hbv;
 
 import com.itextpdf.text.*;
-import com.itextpdf.text.pdf.PdfDocument;
-import com.itextpdf.text.pdf.PdfPage;
 import com.itextpdf.text.pdf.PdfWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -10,10 +8,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-import javax.mail.MessagingException;
-import javax.mail.Transport;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMultipart;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -51,11 +45,10 @@ public class ConfirmationServlet extends HttpServlet {
 
             MyLogger.info("Session has been initialized");
 
-            PdfDocument pdfDocument = new PdfDocument();
             Document document = new Document();
 
             try {
-                PdfWriter.getInstance(document, new FileOutputStream("Confirmation.pdf"));
+                PdfWriter.getInstance(document, new FileOutputStream(new File("Confirmation")));
                 document.open();
                 Font titleFont = new Font(Font.FontFamily.HELVETICA, 16, Font.BOLD);
                 Paragraph paragraph = new Paragraph("Appointment Reservation for " + firstName + " " + lastName);
@@ -88,60 +81,33 @@ public class ConfirmationServlet extends HttpServlet {
             } catch (DocumentException de) {
                 de.printStackTrace();
             } finally {
-                pdfDocument.close();
+                document.close();
+            }
+            File pdfFile = new File("Confirmation.pdf");
+
+            try {
+                String subject = "Einrichtung des Kontos für die Buchung von Terminen für die Covid-19-Impfung";
+
+                String messageBodyPart = "Sehr geehrte/r " + "<b>" + firstName + " " + lastName + "</b>"
+                        + ",<br/><br/>anbei erhalten Sie die Terminbestätigung für Ihren Impftermin. "
+                        + "Bitte bringen Sie das Dokument zum Impfzentrum mit.<br/><br/>Mit freundlichen Grüßen<br/>"
+                        + "Ihr Impfzentrum";
+
+
+                Runnable emailSenderServlet = new EmailSenderServlet(email, subject, messageBodyPart, pdfFile);
+                Thread runner = new Thread(emailSenderServlet);
+                runner.start();
+
+                System.out.println("Le mail a ete envoye avec succes.");
+
+                response.getWriter().write("<h1>Die Terminbestätigung wurde erfolgreich an Ihre E-Mail-Adresse gesendet!</h1>");
+
+            } catch (Exception e) {
+                // TODO: handle exception
+                MyLogger.info("trouble in the Thread flow");
+                response.getWriter().println("Fail to Generate the Pdf");
             }
 
-            // Creer la partie corps du message
-
-            String messageBodyPart = "Sehr geehrte/r " + "<b>" + firstName + " " + lastName + "</b>"
-                    + ",<br/><br/>anbei erhalten Sie die Terminbestätigung für Ihren Impftermin. "
-                    + "Bitte bringen Sie das Dokument zum Impfzentrum mit.<br/><br/>Mit freundlichen Grüßen<br/>"
-                    + "Ihr Impfzentrum";
-
-            // Cr�er le corps de la pi�ce jointe
-            MimeBodyPart attachmentBodyPart = new MimeBodyPart();
-            MimeBodyPart.setFileName(username + "Reservation.pdf");
-//                    attachmentBodyPart.setDataHandler(new javax.activation.DataHandler(new javax.mail.util.ByteArrayDataSource(baos.toByteArray(), "application/pdf")));
-
-            // Cr�ez le message multipart et ajoutez-y les parties du corps.
-            MimeMultipart multipart = new MimeMultipart();
-            multipart.addBodyPart(messageBodyPart);
-            multipart.addBodyPart(attachmentBodyPart);
-
-            // D�finir le message multipartite comme le message e-mail
-            message.setContent(multipart);
-
-            Transport.send(message);
-
-            File attachment =;
-            EmailSenderServlet emailSenderServlet = new EmailSenderServlet(email, subject, messageBodyPart, attachment);
-            emailSenderServlet.start();
-
-            System.out.println("Le mail a ete envoye avec succes.");
-        } catch(MessagingException e){
-            throw new RuntimeException(e);
         }
-
     }
-});
-
-        mailsend.start();
-
-        //verification du THread
-
-        try{
-        mailsend.join();
-        }catch(Exception e){
-        // TODO: handle exception
-        System.out.println("Thread is unreachable");
-        }
-
-
-        // set the content type
-        response.setContentType("text/html");
-
-        // Write a success message to the response output stream
-        response.getWriter().write("<h1>Die Terminbestätigung wurde erfolgreich an Ihre E-Mail-Adresse gesendet!</h1>");
-        }
-        }
-        }
+}

@@ -102,9 +102,9 @@ public class SignUpServlet extends HttpServlet {
 
                     String body = "Hallo Frau/Herr" + lastName + "," + "<br> Ihr KOnto wurde erfolgreich erstellt. Klicken Sie "
                             + "auf den folgenden Link um Ihnen einloggen zu können: " + " http://localhost:8084/App/signIn.html";
-
-                    EmailSenderServlet emailSenderServlet = new EmailSenderServlet(email, subject, body);
-                    emailSenderServlet.start();
+                    Runnable emailSenderServlet = new EmailSenderServlet(email, subject, body);
+                    Thread runner = new Thread(emailSenderServlet);
+                    runner.start();
                     response.getWriter().println("Ihr Konto wurde erfolgreich erstellt. Eine Bestätigungs-E-Mail wird an Ihre E-Mail-Adresse gesendet.");
 
                 } else {

@@ -4,13 +4,11 @@ import javax.mail.*;
 import javax.mail.internet.*;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Properties;
 
-public class EmailSenderServlet extends Thread {
+public class EmailSenderServlet implements Runnable {
 
-    private  Path pdfFile;
+    private File pdfFile;
     private String recipient;
     private String subject;
     private String body;
@@ -22,7 +20,7 @@ public class EmailSenderServlet extends Thread {
         this.body = body;
     }
 
-    public EmailSenderServlet(String recipient, String subject, String bodyPart, Path pdfFile) {
+    public EmailSenderServlet(String recipient, String subject, String bodyPart,File pdfFile) {
         this.recipient = recipient;
         this.bodyPart = bodyPart;
         this.subject = subject;
@@ -60,9 +58,9 @@ public class EmailSenderServlet extends Thread {
             MimeBodyPart messageBodyPart = new MimeBodyPart();
             messageBodyPart.setText(bodyPart);
 
-            byte[] pdfBytes = Files.readAllBytes(pdfFile);
             MimeBodyPart attachmentBodyPart = new MimeBodyPart();
-            attachmentBodyPart.setContent(pdfBytes,"application/pdf");
+            attachmentBodyPart.attachFile(pdfFile);
+            attachmentBodyPart.setContent(pdfFile,"application/pdf");
             attachmentBodyPart.setFileName("Confirmation.pdf");
 
             multipart.addBodyPart(messageBodyPart);

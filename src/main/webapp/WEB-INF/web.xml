@@ -73,6 +73,15 @@
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>EmailSenderServlet</servlet-name>
+        <servlet-class>com.hbv.EmailSenderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmailSenderServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
 
 
     <filter>

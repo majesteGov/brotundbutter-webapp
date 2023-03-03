@@ -10,13 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66263c4c-7f14-4cb8-886e-f8ae4df2d915" name="Changes" comment="&quot;completion of the missing classes&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbv/EmailSenderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/AppointmentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/AppointmentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/ConfirmationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/ConfirmationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/EmailSenderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/EmailSenderServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbv/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +50,44 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2ML2UQTdmpVaXy4ESu3O9DBB1vw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/silat/IdeaProjects/swe3/brotundbutter-java-webapp/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\silat\IdeaProjects\swe3\brotundbutter-java-webapp\src\main\resources" />
@@ -77,7 +104,13 @@
       <recent name="com.hbv" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.5">
+    <configuration name="appointment.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/brotundbutter-java-webapp/appointment.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/brotundbutter-java-webapp/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.5" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="brotundbutter-java-webapp:war exploded">
@@ -164,6 +197,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.appointment.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,7 +215,6 @@
       <workItem from="1677532567487" duration="7026000" />
       <workItem from="1677601309617" duration="666000" />
       <workItem from="1677709016573" duration="8571000" />
-      <workItem from="1677764290208" duration="14491000" />
     </task>
     <servers />
   </component>
